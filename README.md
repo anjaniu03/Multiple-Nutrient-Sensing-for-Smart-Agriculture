@@ -25,6 +25,7 @@ Agriculture increasingly depends on data, but laboratory soil testing is slow an
 2. **Dimensionality Reduction**: Reduced 4,200 spectral features to 263 using feature binning (8nm window) and Partial Least Squares (PLS) improving interpretability and reducing noise.
 3. **Model Training**: Trained and compared Lasso, ElasticNet, Random Forest and XGBoost models, tuning hyperparameters automatically using FLAML’s CASH optimisation framework.
 4. **Stacked Ensemble**: Combined the best performing models into a stacked regression ensemble to integrated predictions of related nutrients, boosting generalisation and minimising R² Score, RPD and NRMSE.
+5. **Progressive Transfer Learning**: Starting with a baseline model trained on Season 2, designed a pipeline to sequentially update the training set by taking the union of historical data and the new season's samples. 
 
 ### Results & Insights:
 
